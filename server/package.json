@@ -1,0 +1,13 @@
+{
+  "name": "genai-course-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend API for the AI course for students (Arabic) — serves lessons/quizzes from JSON data files, keeps quiz answers and the course password server-side.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

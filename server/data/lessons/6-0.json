@@ -1,0 +1,15 @@
+{
+  "title": "عادات يومية جيدة لاستخدام الذكاء الاصطناعي",
+  "time": "20 دقيقة",
+  "body": "\n        <p>الاستخدام الصحي للذكاء الاصطناعي يشبه وصفة متوازنة:</p>\n        <ol>\n          <li><strong>فكّر أولاً بنفسك</strong> قبل أن تسأل الذكاء الاصطناعي.</li>\n          <li><strong>استخدمه كمساعد</strong> لتوضيح فكرة أو الحصول على مثال إضافي.</li>\n          <li><strong>تحقق من إجابته</strong> قبل الاعتماد عليها بالكامل، خاصة في المعلومات المهمة.</li>\n        </ol>\n        <div class=\"callout\">💡 كلما مارست هذا التوازن أكثر، كلما تحسّنت مهارتك الحقيقية بدلاً من الاعتماد الكامل على الأداة.</div>\n      ",
+  "diagramHtml": "\n    <div class=\"diagram-box\">\n      <h4>⏰ استخدام متوازن للذكاء الاصطناعي</h4>\n      <div class=\"chart-wrap\"><canvas id=\"chart-usage\"></canvas></div>\n    </div>\n    <script>\n    (function(){\n      var ctx = document.getElementById('chart-usage');\n      if(!ctx) return;\n      new Chart(ctx, {\n        type:'doughnut',\n        data:{\n          labels:['أفكر وأحاول بنفسي أولاً','أستخدم الذكاء الاصطناعي كمساعد','أتحقق من الإجابة وأراجعها'],\n          datasets:[{data:[40,35,25], backgroundColor:['#0f6e64','#c8650f','#5b4b8a']}]\n        },\n        options:{responsive:true,maintainAspectRatio:false,\n          plugins:{legend:{position:'bottom',labels:{font:{family:'Tajawal'},padding:14}}}\n        }\n      });\n    })();\n    </script>",
+  "lessonQuiz": {
+    "q": "أي من هذه عادة يومية جيدة عند استخدام الذكاء الاصطناعي؟",
+    "opts": [
+      "تصديق كل ما يقوله دون تفكير",
+      "التفكير بنفسك أولاً، ثم استخدامه كمساعد، ثم التحقق من إجابته",
+      "استخدامه لكل شيء دون استثناء",
+      "عدم إخبار أحد أبداً بأنك تستخدمه"
+    ]
+  }
+}

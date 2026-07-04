@@ -1,0 +1,15 @@
+{
+  "title": "ما هي \"الهلوسة\" في الذكاء الاصطناعي؟",
+  "time": "15 دقيقة",
+  "body": "\n        <p>أحياناً يعطيك الذكاء الاصطناعي معلومة خاطئة تماماً، لكنه يقولها بنفس الثقة التي يقول بها المعلومة الصحيحة! تسمى هذه الظاهرة <strong>\"الهلوسة\"</strong>.</p>\n        <p>لماذا يحدث هذا؟ لأن الذكاء الاصطناعي لا \"يعرف\" الحقيقة بالمعنى الذي نعرفه نحن، هو فقط يخمّن الكلمات الأكثر احتمالاً. وأحياناً يكون التخمين الأكثر احتمالاً... خاطئاً.</p>\n        <div class=\"callout\">💡 <strong>قاعدة ذهبية:</strong> كلما كانت المعلومة مهمة (تاريخ، رقم، اسم علمي)، تحقق منها من مصدر موثوق آخر.</div>\n      ",
+  "diagramHtml": "\n    <div class=\"diagram-box\">\n      <h4>⚠️ الثقة ليست دائماً دليلاً على الصحة</h4>\n      <p style=\"font-size:.85rem;color:var(--ink-soft);margin-bottom:10px;\">الذكاء الاصطناعي يتحدث بنفس الأسلوب الواثق سواء كانت إجابته صحيحة أم خاطئة تماماً.</p>\n      <div class=\"chart-wrap\"><canvas id=\"chart-confidence\"></canvas></div>\n    </div>\n    <script>\n    (function(){\n      var ctx = document.getElementById('chart-confidence');\n      if(!ctx) return;\n      new Chart(ctx, {\n        type:'bar',\n        data:{\n          labels:['سؤال شائع ومعروف','سؤال عن تفصيل نادر','سؤال عن حدث حديث جداً'],\n          datasets:[\n            {label:'مستوى ثقة الإجابة', data:[95,92,90], backgroundColor:'#0f6e64', borderRadius:6},\n            {label:'مدى صحة الإجابة فعلياً', data:[93,45,20], backgroundColor:'#c8650f', borderRadius:6}\n          ]\n        },\n        options:{responsive:true,maintainAspectRatio:false,\n          plugins:{legend:{position:'bottom',labels:{font:{family:'Tajawal'}}}},\n          scales:{y:{max:100,ticks:{font:{family:'Tajawal'}}},x:{ticks:{font:{family:'Tajawal',size:11}}}}\n        }\n      });\n    })();\n    </script>",
+  "lessonQuiz": {
+    "q": "ماذا نسمي الحالة التي يعطي فيها الذكاء الاصطناعي معلومة خاطئة بثقة تامة؟",
+    "opts": [
+      "الهلوسة",
+      "التحديث",
+      "الحظر",
+      "الترجمة"
+    ]
+  }
+}

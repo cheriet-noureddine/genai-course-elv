@@ -1,0 +1,15 @@
+{
+  "title": "التحقق من الحقائق: قد يخطئ الذكاء الاصطناعي بثقة تامة",
+  "time": "25 دقيقة",
+  "body": "\n        <p>كما تعلّمنا سابقاً، الذكاء الاصطناعي قد \"يهلوس\" ويقول معلومة خاطئة بنفس ثقة المعلومة الصحيحة تماماً. لهذا فإن مهارة التحقق من الحقائق مهمة جداً، خاصة في الواجبات المدرسية.</p>\n        <ul>\n          <li>تحقق من التواريخ والأرقام المهمة من كتابك المدرسي.</li>\n          <li>ابحث عن نفس المعلومة في مصدر ثانٍ إن كانت مهمة جداً.</li>\n          <li>إذا بدت المعلومة غريبة أو غير منطقية، اسأل معلمك أو والديك.</li>\n        </ul>\n      ",
+  "diagramHtml": "\n    <div class=\"diagram-box\">\n      <h4>⚠️ الثقة ليست دائماً دليلاً على الصحة</h4>\n      <p style=\"font-size:.85rem;color:var(--ink-soft);margin-bottom:10px;\">الذكاء الاصطناعي يتحدث بنفس الأسلوب الواثق سواء كانت إجابته صحيحة أم خاطئة تماماً.</p>\n      <div class=\"chart-wrap\"><canvas id=\"chart-confidence\"></canvas></div>\n    </div>\n    <script>\n    (function(){\n      var ctx = document.getElementById('chart-confidence');\n      if(!ctx) return;\n      new Chart(ctx, {\n        type:'bar',\n        data:{\n          labels:['سؤال شائع ومعروف','سؤال عن تفصيل نادر','سؤال عن حدث حديث جداً'],\n          datasets:[\n            {label:'مستوى ثقة الإجابة', data:[95,92,90], backgroundColor:'#0f6e64', borderRadius:6},\n            {label:'مدى صحة الإجابة فعلياً', data:[93,45,20], backgroundColor:'#c8650f', borderRadius:6}\n          ]\n        },\n        options:{responsive:true,maintainAspectRatio:false,\n          plugins:{legend:{position:'bottom',labels:{font:{family:'Tajawal'}}}},\n          scales:{y:{max:100,ticks:{font:{family:'Tajawal'}}},x:{ticks:{font:{family:'Tajawal',size:11}}}}\n        }\n      });\n    })();\n    </script>",
+  "lessonQuiz": {
+    "q": "ماذا يجب أن تفعل عندما يعطيك الذكاء الاصطناعي معلومة تبدو غريبة أو غير متأكد منها؟",
+    "opts": [
+      "تصدقها فوراً لأنه \"ذكي\"",
+      "تتحقق منها من مصدر آخر موثوق مثل كتابك المدرسي",
+      "تتجاهل الموضوع بالكامل",
+      "تخبر الجميع بها دون تحقق"
+    ]
+  }
+}
