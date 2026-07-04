@@ -261,7 +261,7 @@ function renderHome(){
   const heroLogo = document.createElement('div');
   heroLogo.className = 'hero-logo-wrap';
   heroLogo.innerHTML = `
-    <div style="font-size:56px;">🎓</div>
+    <img src="/assets/logo.jpg" alt="EFIEG" class="hero-logo-img">
     <div class="hero-logo-text">
       <div class="hero-logo-school">مدرسة سلواني · EFIEG</div>
       <div class="hero-logo-name">الذكاء الاصطناعي<br>في حياتي اليومية</div>
